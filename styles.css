@@ -1,3 +1,4 @@
+
 #nextpage{
     display: flex;
     width: 100%;
@@ -20,3 +21,12 @@
     align-items: center;
     z-index: 1;
 }
+
+.page {
+    margin: 0%;
+}
+
+.pulse {
+    background: #E8A77B;
+}
+
