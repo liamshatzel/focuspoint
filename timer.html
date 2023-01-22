@@ -16,6 +16,7 @@
             <div id="timer-col-1">
                 <div id="timer">
                     <div id="timer-nums">
+                        <div id="hours">00:</div>
                         <div id="minutes">00</div>
                         :
                         <div id="seconds">00</div>
@@ -27,18 +28,13 @@
                 </div>
                 <div id="buttons">
                     <button onclick="inputChange()" id="start">Start</button>
-                    <button id="pause">Pause</button>
-                    <button id="reset">Reset</button>
+                    <button id="reset" onclick="callClearInterval()">Reset</button>
                 </div>
             </div>
             <div id="timer-col-2">
             </div>
         </div>
         <div id="timer-row-2">
-            <div id="timer-col-1">
-            </div>
-            <div id="timer-col-2">
-            </div>
         </div>
     </div>
 </body>
