@@ -236,7 +236,7 @@ myPlayer.player.bind(SC.Widget.Events.READY, function () {
                 console.log(myPlayer.playlistInfo);
                 for (var i in ret) {
                     if (ret[i].title != undefined && i > numDisplayed) {
-                        $('#tracklist').append("<li class='track-item' id='" + i + "'" + ">" + ret[i].title + "</li>");
+                        //$('#tracklist').append("<li class='track-item' id='" + i + "'" + ">" + ret[i].title + "</li>");
                     }
                 }
             }
