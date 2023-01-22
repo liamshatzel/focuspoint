@@ -5,7 +5,7 @@ body {
 #background {
     display: flex;
     flex-direction: column;
-    height: 1080px;
+    height: 100vh;
     width: 100%;
 
 }
@@ -31,7 +31,9 @@ body {
     margin: 10px;
     width: 100%;
     height: 100%;
-    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
     background: #E89EBF;
 }
 
@@ -40,14 +42,8 @@ body {
     margin: 10px;
     width: 100%;
     height: 100%;
-    flex-flow: column wrap;
+    flex-flow: column;
     background: #FFC7AD;
-}
-
-#time-inputs {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
 }
 
 #timer-nums {
@@ -57,6 +53,11 @@ body {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#mins-input {
+    width: 100%;
+}
+
 
 #hours {
     display: none;
