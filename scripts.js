@@ -2,6 +2,7 @@
 let myFunc;
 
 function inputChange() {
+    $("#start").prop("disabled", true);
 
     let mins = 00;
     let secs = 00;
@@ -59,6 +60,7 @@ function callClearInterval() {
     $("#seconds").html("00");
     $("#mins-input").val("");
     $("#secs-input").val("");
+    $("#start").prop("disabled", false);
 }
 
 
