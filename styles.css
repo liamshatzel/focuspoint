@@ -102,15 +102,34 @@ flex-direction: row;}
         margin-top: 20px;
         padding: 0;
     }
+    h3{
+        font-family: 'helvetica';
+        font-size: 30px;
+        line-height: 0px;
+        color: #3D3D3D;
+        text-align: center;
+        margin-top: 20px;
+        padding: 0;
+    }
 
     #welcomebox{
         display: flex;
         flex-direction: column;
-        width: 50%;
-        height: 50%;
+        width: 55%;
+        height: 55%;
         background-color: white;
         border-radius: 20px;
         justify-content: center;
+        background: rgba(255,255,255, .5);        
+    }
+
+    #welcomebox p{
+        font-family: 'helvetica';
+        opacity: 100%;
+    }
+    #welcombox h3{
+        font-family: 'helvetica';
+        opacity: 100%;
     }
 
 body{
