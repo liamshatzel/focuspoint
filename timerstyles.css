@@ -1,5 +1,6 @@
 body {
     font-family: Helvetica, sans-serif;
+    background-color: pink;
 }
 
 #background {
@@ -7,6 +8,7 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 100%;
+    background-color: pink;
 
 }
 
@@ -15,44 +17,60 @@ body {
     flex-flow: row;
     width: 100%;
     height: 50%;
-    background: #FFADF8;
+    padding-top: 5%;
 }
 
 #timer-row-2 {
     display: flex;
     flex-flow: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 50%;
-    background: #FFBBBA;
 }
 
 #timer-col-1 {
     display: flex;
-    margin: 10px;
-    width: 100%;
-    height: 100%;
+    margin: 20px;
+    width: 90%;
+    height: 90%;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    background: #E89EBF;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
 }
+
+#timer-col-3 {
+    display: flex;
+    margin: 20px;
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20%;
+}
+
 
 #timer-col-2 {
     display: flex;
-    margin: 10px;
-    width: 100%;
-    height: 100%;
-    flex-flow: column;
-    align-items: center;
+    margin: 20px;
+    width: 90%;
+    height: 90%;
     justify-content: center;
-    background: #FFC7AD;
+    align-items: center;
+    flex-flow: column;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
 }
 
 #timer-nums {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: white;
+    color: #3d3d3d;
     width: 100%;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -95,7 +113,7 @@ body {
 
 p {
     font-family: Helvetica, sans-serif;
-    color: white;
+    color: black;
     font-size: 30px;
 }
 
@@ -194,4 +212,8 @@ a {
     left: -18px;
     top: 5px;
     margin-right: 20px;
+}
+
+#spacer {
+    width: 20%;
 }
