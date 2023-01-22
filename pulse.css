@@ -1,0 +1,52 @@
+body {
+    background-color: thistle;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    height: 1080px;
+}
+
+.top {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    height: 33%;
+    width: 100%;
+}
+
+.bottom {
+    height: 77%;
+    width: 100%;
+}
+
+.pulse {
+    position: relative;
+    background-color: blue;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.skip {
+    background-color: green;
+    height: 33%;
+    width: 100%;
+}
+
+.calm {
+    background-color: yellow;
+    height: 33%;
+    width: 100%;
+}
+
+.circle {
+    position: absolute;
+    background-color: orange;
+    z-index: 100;
+    color: yellow;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
