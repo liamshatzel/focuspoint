@@ -7,7 +7,6 @@ function inputChange() {
     let mins = 00;
 
     mins = $("#mins-input").val();
-    console.log(mins);
 
     var countDownDate = new Date().getTime();
 
