@@ -178,4 +178,20 @@ a {
 
 #soundcloud {}
 
+#counter li {
+    display: inline-block;
+    height: 40px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 0 4px 0 0;
+}
 
+#counter li:nth-child(5n) {
+    -webkit-transform: rotate(300deg);
+    -moz-transform: rotate(300deg);
+    -o-transform: rotate(300deg);
+    height: 50px;
+    position: relative;
+    left: -18px;
+    top: 5px;
+    margin-right: 20px;
+}

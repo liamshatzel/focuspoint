@@ -37,6 +37,7 @@
                 <div id="timerholder">
                     <div id="timer">
                         <p id="focus-disp"></p>
+                        <p id="sessions"></p>
                         <div id="timer-nums">
                             <div id="hours">00:</div>
                             <div id="minutes">00</div>
@@ -46,15 +47,23 @@
                         <div id="timeinputs">
                             Focus (mins): <input type="number" id="study-input" min="0">
                             Break (mins): <input type="number" id="break-input" min="0">
+                            Num Sessions: <input type="number" id="session-input" min="0">
                         </div>
                     </div>
                     <div id="buttons">
-                        <button onclick="inputChange()" id="start">Start</button>
+                        <button onclick="getInput()" id="start">Start</button>
                         <button id="reset" onclick="callClearInterval()">Reset</button>
                     </div>
                 </div>
             </div>
             <div id="timer-col-2">
+                <div id="counter">
+                    <p>Focus Count</p>
+                    <div id="tally">
+                        <ol id="count">
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="timer-row-2">

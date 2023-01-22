@@ -3,14 +3,24 @@ let myFunc;
 
 let focus = true;
 var breakTime = 0;
+var focusTime = 0;
+var numRounds = 0;
 
-function inputChange() {
+function getInput() {
+    focusTime = $("#study-input").val();
+    breakTime = $("#break-input").val();
+    numRounds = $("#session-input").val();
+    inputChange(focusTime);
+}
+
+
+function inputChange(timeAmt) {
     $("#start").prop("disabled", true);
     $("#focus-disp").html("Focus");
+    $("#sessions").html("Sessions: " + numRounds);
     let mins = 00;
-
-    mins = $("#study-input").val();
-    breakTime = $("#break-input").val();
+    mins = timeAmt;
+    console.log(focusTime);
 
     var countDownDate = new Date().getTime();
 
@@ -40,17 +50,22 @@ function inputChange() {
 
         seconds = seconds.toString().padStart(2, '0')
 
-        console.log(timeleft);
         $("#minutes").html(minutes);
         $("#seconds").html(seconds);
 
         if (timeleft < 0) {
-            console.log(breakTime);
             clearInterval(myfunc);
             $("#minutes").html("00");
             $("#seconds").html("00");
-            focus = false;
-            breakFn();
+
+            if (numRounds > 0) {
+                addTalley();
+                inputChange(focusTime);
+                numRounds--;
+            } else {
+                focus = false;
+                breakFn();
+            }
         }
     }, 1000)
 }
@@ -232,3 +247,7 @@ myPlayer.player.bind(SC.Widget.Events.READY, function () {
 });
 
 
+function addTalley() {
+    $('<li />').prop('class', 'tally').appendTo('#count');
+    return false;
+}
